@@ -1,0 +1,37 @@
+{
+ "name": "MacNeil Guide",
+ "short_name": "MacNeil Guide",
+ "description": "Plain-language guide to MacNeil Wash Systems car wash equipment: checks, grease points, safety. Works offline.",
+ "start_url": "./",
+ "scope": "./",
+ "id": "./",
+ "display": "standalone",
+ "orientation": "any",
+ "background_color": "#f4f6f9",
+ "theme_color": "#0b4ea2",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  },
+  {
+   "src": "apple-touch-icon.png",
+   "sizes": "180x180",
+   "type": "image/png"
+  }
+ ]
+}
