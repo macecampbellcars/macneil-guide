@@ -1,5 +1,5 @@
 /* MacNeil Guide service worker: caches the whole app so it works with no signal. */
-const CACHE="macneil-guide-468127143a";
+const CACHE="macneil-guide-93e6500b99";
 const FILES=["index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "apple-touch-icon.png", "favicon-32.png"];
 self.addEventListener("install",e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES.concat(["./"]))).then(()=>self.skipWaiting()))});
 self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k.startsWith("macneil-guide-")&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
